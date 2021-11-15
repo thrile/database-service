@@ -1,7 +1,6 @@
 {
-  "name": "database-service",
+  "name": "node-service-template",
   "version": "1.0.0",
-  "description": "A REST API and unit tests for interfacing with mongo db",
   "main": "dest/server.js",
   "scripts": {
     "format": "npx prettier --write .",
@@ -17,11 +16,6 @@
   },
   "author": "Tom Riley",
   "license": "ISC",
-  "dependencies": {
-    "@azure/identity": "^1.5.2",
-    "express": "^4.17.1",
-    "mongodb": "^4.0.0"
-  },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.1",
     "@types/express": "^4.17.13",
