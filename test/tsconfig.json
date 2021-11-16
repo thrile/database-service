@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "../dest/test",
+    "composite": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true
+  }
+}

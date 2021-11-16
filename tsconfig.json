@@ -1,0 +1,20 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dest",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["dest", "node_modules", "**/*.spec.ts"],
+  "watchOptions": {
+    "excludeDirectories": ["dest", "node_modules"]
+  },
+  "references": [
+    {
+      "path": "test"
+    }
+  ]
+}
