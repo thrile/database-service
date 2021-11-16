@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "main": "dest/server.js",
   "scripts": {
+    "dev": "concurrently 'npx tsc --watch' 'npx nodemon'",
     "format": "npx prettier --write .",
     "lint": "npx eslint .",
-    "compile": "npx tsc",
-    "compile-test": "npx tsc -b",
+    "compile": "npx tsc -b",
     "build": "npm run format && npm run lint && npm run compile",
-    "prestart": "npm run build",
-    "start": "node dest/server.js",
-    "dev": "concurrently 'npx tsc --watch' 'npx nodemon'",
-    "pretest": "npm run format && npm run lint && npm run compile-test",
-    "test": "npx mocha dest/test"
+    "test": "npx mocha dest/test",
+    "start": "node dest/server.js"
   },
   "author": "Tom Riley",
   "license": "ISC",
